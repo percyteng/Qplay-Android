@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation = "vertical"
+    android:background="#e5e4e2"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:id="@+id/llMenuBar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bCancel"
+            android:clickable="false"
+            android:textStyle="bold"
+            android:text="Cancel"
+            android:textSize="15dp"
+            android:background="#98AFC7" />
+        <EditText
+            android:layout_weight="5"
+            android:id="@+id/etActName"
+            android:hint="Enter activity name here"
+            android:textColor="#000000"
+            android:background="#98AFC7"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width = "fill_parent"
+            android:layout_height = "fill_parent" />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bPost"
+            android:clickable="false"
+            android:textStyle="bold"
+            android:text="Post"
+            android:textSize="15dp"
+            android:background="#98AFC7" />
+    </LinearLayout>
+    <EditText
+        android:layout_below="@+id/llMenuBar"
+        android:hint="Brief introduction of the activity"
+        android:id="@+id/etIntro"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_width = "match_parent"
+        android:layout_height = "300dp" />
+    <LinearLayout
+        android:layout_below="@+id/etIntro"
+        android:id="@+id/llDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imgDate"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            android:background="#0000"
+            android:src="@drawable/calender"/>
+        <TextView
+            android:id="@+id/tvDate"
+            android:background="@android:drawable/editbox_background_normal"
+            android:textColor="#000000"
+            android:inputType="date"
+            android:hint="Date:"
+            android:width="300dp"
+            android:textSize="20dp"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/llDate"
+        android:id="@+id/llTime"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imgTime"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            android:background="#0000"
+            android:src="@drawable/clock"/>
+        <TextView
+            android:id="@+id/tvTime"
+            android:textColor="#000000"
+            android:inputType="date"
+            android:hint="Time: "
+            android:background="@android:drawable/editbox_background_normal"
+            android:width="300dp"
+            android:textSize="20dp"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/llTime"
+        android:layout_marginTop="5dp"
+        android:id="@+id/llLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <ImageView
+            style="@android:style/Widget.DeviceDefault.Light.Spinner"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            android:background="#0000"
+            android:src="@drawable/location"/>
+        <EditText
+            android:id="@+id/etLocation"
+            android:textColor="#000000"
+            android:hint="Location: "
+            style="?android:attr/spinnerStyle"
+            android:width="300dp"
+            android:textSize="20dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation = "vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:weightSum="1"
+    android:layout_marginTop="50dp"
+    android:baselineAligned="false">
+
+    <ImageButton
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="80dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/queensflag"
+        android:id="@+id/imageButton2" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageButton2"
+        android:id="@+id/tvUsername"
+        android:text="Email"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width = "wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height = "wrap_content"/>
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvUsername"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etUsername" />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etUsername"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:id="@+id/tvPassword"
+        android:layout_width = "wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Password"
+        android:layout_height = "wrap_content"/>
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvPassword"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPassword" />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etPassword"
+        android:textStyle="bold"
+        android:layout_width="300dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Login"
+        android:id="@+id/blogin"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/blogin"
+        android:id="@+id/tvRegisterLink"
+        android:layout_width = "wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="Register"
+        android:layout_height = "wrap_content"/>
+
+</RelativeLayout>

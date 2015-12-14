@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="llOverall" type="id"/>
+    <item name="tvDate" type="id"/>
+    <item name="tvName" type="id"/>
+    <item name="button" type="id"/>
+    <item name="tvActName" type="id"/>
+    <item name="view" type="id"/>
+</resources>

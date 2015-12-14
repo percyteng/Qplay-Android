@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation = "vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+        <ImageButton
+            android:layout_marginTop="30dp"
+            android:layout_width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="150dp"
+            android:background="@drawable/queensflag"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/imageButton2" />
+
+    <TextView
+        android:text="Queen's email"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width = "wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height = "wrap_content"/>
+    <EditText
+        android:id = "@+id/etEmail"
+        android:layout_width="462dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10" />
+    <TextView
+        android:text="UserName"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width = "wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height = "wrap_content"/>
+    <EditText
+        android:id = "@+id/etUsername"
+        android:layout_width="462dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10" />
+    <TextView
+        android:text="Enter password"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width = "wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height = "wrap_content"/>
+
+    <EditText
+        android:layout_width="462dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/etPassword" />
+
+    <TextView
+        android:text="Re-enter password"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width = "wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height = "wrap_content"/>
+
+    <EditText
+        android:layout_width="462dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:id="@+id/etRePassword"  />
+
+    <Button
+        android:layout_width="462dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Sign up"
+        android:id="@+id/bSignup"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/bCancel" />
+
+</LinearLayout>

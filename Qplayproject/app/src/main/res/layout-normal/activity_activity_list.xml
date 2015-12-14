@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation = "vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:id="@+id/llMenuBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--<ImageView-->
+            <!--android:id="@+id/imgSearch"-->
+            <!--style="?android:attr/buttonBarButtonStyle"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:clickable="false"-->
+            <!--android:background="#98AFC7"-->
+            <!--android:src="@drawable/search"/>-->
+         <TextView
+            android:text="Activities"
+            android:textColor="#000000"
+            android:background="#98AFC7"
+            android:height="40dp"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:layout_width = "fill_parent"
+            android:paddingTop="5dp"
+            android:layout_height = "wrap_content" />
+        <ImageView
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/imgPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:clickable="false"
+            android:background="#98AFC7"
+            android:src="@drawable/plus"/>
+    </LinearLayout>
+    <ScrollView
+        android:background="#e5e4e2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_above="@+id/linearButton"
+        android:layout_below="@+id/llMenuBar"
+        android:id="@+id/scView"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/overallLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <!--<LinearLayout-->
+                <!--android:id="@+id/llInfo"-->
+                <!--android:orientation = "vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<TextView-->
+                    <!--android:id="@+id/tvName"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="Percy Teng"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:textColor="#1569C7"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:id="@+id/tvActName"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="Break dance session"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="#CD7F32"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="11 November"-->
+                    <!--android:textSize="15dp"-->
+                    <!--android:textColor="#9DC209"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="Location: ARC LL1"-->
+                    <!--android:textSize="15dp"-->
+                    <!--android:textColor="#342D7E"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:id="@+id/tvActInfo"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginBottom="30dp"-->
+                    <!--android:layout_marginTop="30dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:textSize="15dp"-->
+                    <!--android:text="Break dance casual practice at LL1 (7pm)\n-->
+<!--Come and let's boogie!\n-->
+                            <!--Percy Teng, President of QRBC"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Joining: Percy Teng"-->
+                    <!--android:textSize="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="#6F4E37"-->
+                    <!--android:layout_marginBottom="10dp"/>-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<Button-->
+                        <!--android:id="@+id/bDelete"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Join"-->
+                        <!--android:textSize="15dp"-->
+                        <!--android:background="@drawable/roundbutton"-->
+                        <!--android:layout_marginRight="30dp" />-->
+                <!--<Button-->
+                    <!--android:id="@+id/bJoin"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Delete"-->
+                    <!--android:textSize="15dp"-->
+                    <!--android:background="@drawable/roundbutton"-->
+                    <!--android:layout_marginRight="30dp"-->
+                    <!--android:layout_alignParentRight="true" />-->
+                <!--</RelativeLayout>-->
+                <!--<View-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="@android:color/darker_gray"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/llInfo1"-->
+                <!--android:orientation = "vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<TextView-->
+                    <!--android:id="@+id/tvName1"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="Jefferson"-->
+                    <!--android:textSize="30dp"-->
+                    <!--android:textColor="#1569C7"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:id="@+id/tvActName1"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="Basketball game"-->
+                    <!--android:textSize="30dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="#CD7F32"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="10 November"-->
+                    <!--android:textSize="25dp"-->
+                    <!--android:textColor="#9DC209"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="Location: ARC 3rd floor"-->
+                    <!--android:textSize="25dp"-->
+                    <!--android:textColor="#342D7E"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:id="@+id/tvActInfo1"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="30dp"-->
+                    <!--android:layout_marginBottom="30dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:text="Come to arc 3rd floor at 9pm today and let's ball!"-->
+                    <!--android:textSize="25dp"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<Button-->
+                    <!--android:id="@+id/bJoin1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Join"-->
+                    <!--android:textSize="25dp"-->
+                    <!--android:background="@drawable/roundbutton"-->
+                    <!--android:layout_marginRight="30dp"-->
+                    <!--android:layout_gravity="right" />-->
+                <!--<View-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="@android:color/darker_gray"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/llInfo2"-->
+                <!--android:orientation = "vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<TextView-->
+                    <!--android:id="@+id/tvName2"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="Hassan Haq"-->
+                    <!--android:textSize="30dp"-->
+                    <!--android:textColor="#1569C7"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:id="@+id/tvActName2"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="Work out"-->
+                    <!--android:textSize="30dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="#CD7F32"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="9 November"-->
+                    <!--android:textSize="25dp"-->
+                    <!--android:textColor="#9DC209"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="Location: ARC gym"-->
+                    <!--android:textSize="25dp"-->
+                    <!--android:textColor="#342D7E"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:id="@+id/tvActInfo2"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="30dp"-->
+                    <!--android:layout_marginBottom="30dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:text="Working on my tricep and chest today at 10 pm\n-->
+<!--need a good buddy to spot me!"-->
+                    <!--android:textSize="25dp"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<Button-->
+                    <!--android:id="@+id/bJoin2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Join"-->
+                    <!--android:textSize="25dp"-->
+                    <!--android:background="@drawable/roundbutton"-->
+                    <!--android:layout_marginRight="30dp"-->
+                    <!--android:layout_gravity="right" />-->
+                <!--<View-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="@android:color/darker_gray"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/llInfo3"-->
+                <!--android:orientation = "vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<TextView-->
+                    <!--android:id="@+id/tvName3"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="Tiffany"-->
+                    <!--android:textSize="30dp"-->
+                    <!--android:textColor="#1569C7"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:id="@+id/tvActName3"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="Gymnastic"-->
+                    <!--android:textSize="30dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="#CD7F32"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="8 November"-->
+                    <!--android:textSize="25dp"-->
+                    <!--android:textColor="#9DC209"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="Location: ARC combact room"-->
+                    <!--android:textSize="25dp"-->
+                    <!--android:textColor="#342D7E"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:id="@+id/tvActInfo3"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginBottom="30dp"-->
+                    <!--android:layout_marginTop="30dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:textSize="25dp"-->
+                    <!--android:text="Gymnastic and flip practice at 7pm!"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<Button-->
+                    <!--android:id="@+id/bJoin3"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Join"-->
+                    <!--android:textSize="25dp"-->
+                    <!--android:background="@drawable/roundbutton"-->
+                    <!--android:layout_marginRight="30dp"-->
+                    <!--android:layout_gravity="right" />-->
+                <!--<View-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="@android:color/darker_gray"/>-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/linearButton"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:background="#966F33"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="Activities"
+            android:id="@+id/bActivities" />
+
+        <Button
+            android:layout_weight="1"
+            android:background="#98AFC7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:id="@+id/bProfile"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:height="30dp" />
+    </LinearLayout>
+</RelativeLayout>

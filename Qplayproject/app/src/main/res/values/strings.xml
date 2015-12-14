@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Qplay project</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_activity_list">ActivityList</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_create">CreateActivity</string>
+    <string name="title_activity_user_activitylist">UserActivitylist</string>
+    <string name="title_activity_otheruseractivity">otheruseractivity</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="title_activity_otheruserprofile">otheruserprofile</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_splash_screen">splashScreen</string>
+    <string name="title_activity_test">test</string>
+</resources>

@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation = "vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <ImageButton
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="60dp"
+        android:background="@drawable/queensflag"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/imageButton2" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageButton2"
+        android:text="Queen's email"
+        android:id="@+id/queensemail"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width = "wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height = "wrap_content"/>
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/queensemail"
+        android:id = "@+id/etEmail"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10" />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etEmail"
+        android:text="UserName"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/username"
+        android:layout_width = "wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height = "wrap_content"/>
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/username"
+        android:id = "@+id/etUsername"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10" />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etUsername"
+        android:text="Enter password"
+        android:id="@+id/password"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width = "wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height = "wrap_content"/>
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/password"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/etPassword" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:text="Re-enter password"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width = "wrap_content"
+        android:layout_below="@id/etPassword"
+        android:id="@+id/RePassword"
+        android:layout_gravity="center_horizontal"
+        android:layout_height = "wrap_content"/>
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/RePassword"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:id="@+id/etRePassword"  />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etRePassword"
+        android:textStyle="bold"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Sign up"
+        android:id="@+id/bSignup"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_below="@+id/bSignup"
+        style="?android:attr/buttonStyleSmall"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/bCancel" />
+
+</RelativeLayout>
